@@ -1,15 +1,15 @@
 import java.util.*;
 
  public class App {
-   
-    static int size; 
-    static int disk_size; 
+
     
     // Function to perform C-LOOK on the request 
     // array starting from the given head 
 
-public static void CLOOK(int arr[], int head) 
+public static void CLOOK(int length, int arr[], int head) 
 { 
+    int size = length;
+    int disk_size;
     int seek_count = 0; 
     int distance, cur_track; 
      
@@ -115,7 +115,7 @@ public static void main(String []args)
     System.out.println("Initial position of head: " +
                        head); 
    
-    CLOOK(arr, head); 
+    CLOOK(length, arr, head); 
 
     in.close();
 }
